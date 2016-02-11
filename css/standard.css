@@ -386,6 +386,52 @@ h4.go{
 }
 
 
+.night{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-5px 0 0 -5px;
+	width:			10px;
+	height:			10px;
+	border-radius:		100%;
+	background:		#000;
+	opacity:		0;
+}
+
+.night.go{
+	animation:		chaos 5s ease-out;
+}
+
+@keyframes chaos{
+	0%{opacity:0;transform:scale(1,1);}
+	100%{opacity:1;transform:scale(500,500);}
+}
+
+.sun{
+	position:		fixed;
+	bottom:			-230px;
+	left:			50%;
+	margin:			-100px 0 0 -100px;
+	width:			200px;
+	height:			200px;
+	border-radius:		100%;
+	background:		linear-gradient(to bottom, #E0AB35 0%, #FDE2B3 100%);
+	box-shadow:		0 0 30px #E0AB35;
+	opacity:		1;
+}
+
+.sun.go{
+	animation:		getup 5s ease-out;
+}
+
+@keyframes getup{
+	0%{bottom:-260px;}
+	100%{bottom:-130px;}
+}
+
+
+
+
 #qLoverlay{
 	display:		none;
 }

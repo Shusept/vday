@@ -63,10 +63,10 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$("#🌹 .🌺").fadeIn(3000);
 			}, 4000);
-			setTimeout(function(){
-				$(".k1, .k3, .k5, .k7").addClass("g1").css("opacity","1");
-				$(".k2, .k4, .k6").addClass("g2").css("opacity","1");
-			}, 4000);
+			//setTimeout(function(){
+			//	$(".k1, .k3, .k5, .k7").addClass("g1").css("opacity","1");
+			//	$(".k2, .k4, .k6").addClass("g2").css("opacity","1");
+			//}, 4000);
 		});
 	}, 28000);
 	
@@ -118,6 +118,10 @@ $(document).ready(function(){
 			$('h1').css('display', 'none');
 			parent.$.fancybox.close();
 			$('h4').addClass('go');
+			$('#stop-btn').click();
+			$('.nuclear').fadeOut(3000);
+			$('.music-icon').fadeOut(3000);
+			//$('.🌟').fadeOut(3000);
 			$('.💐').fadeOut(3000);
 			setTimeout(function(){
 				$('.🌺').fadeOut(3000);
@@ -129,8 +133,15 @@ $(document).ready(function(){
 				$('.🍀').fadeOut(3000);
 			}, 9000);
 			setTimeout(function(){
-				location.reload();
+				//location.reload();
+				$('.night').addClass('go');
 			}, 12000);
+			setTimeout(function(){
+				$('.night').css({'opacity':'1','transform':'scale(500,500)'});
+				$(".k1, .k3, .k5, .k7").addClass("g1").css("opacity","1");
+				$(".k2, .k4, .k6").addClass("g2").css("opacity","1");
+				$('.sun').addClass('go').css('bottom','-130px');
+			}, 15000);
 		}
 	});
 	
