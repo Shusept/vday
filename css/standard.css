@@ -1,0 +1,411 @@
+/* styles written in this file is for Standard */
+
+
+.clearfix:after{
+	content:		".";
+	display:		block;
+	visibility:		hidden;
+	height:			0.1px;
+	font-size:		0.1em;
+	line-height:		0;
+	clear:			both;
+}
+
+.clearfix{
+	zoom:			100%;
+}
+
+
+*{
+	margin:			0;
+	padding:		0;
+}
+
+input,button,select,textarea{outline:none;-webkit-appearance:none;-webkit-box-shadow:none;}
+textarea{resize:none;}
+
+html{
+	font-size:		62.5%;
+}
+
+body{
+	font-family:		'微软雅黑','Microsoft YaHei',sans-serif,Helvetica,Arial;
+	font-size:		16px;
+	font-size:		1.6rem;
+	line-height:		1.6;
+	background:		#fff;
+	color:			#333;
+	text-shadow:		1px 1px 1px #000;
+}
+
+#wrapper{
+	
+}
+
+
+#🌹{
+	position:		relative;
+	height:			100%;
+	overflow:		hidden;
+}
+
+#🌹 .🍀{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	width:			100%;
+	background:		url(../img/bg01.jpg) no-repeat center center;
+	background-size:	cover;
+	animation:		rotateRight 30s infinite linear;
+}
+
+#🌹 .🌀{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	width:			100%;
+	background:		url(../img/bg02.png) no-repeat center center;
+	background-size:	cover;
+	animation:		rotateLeft 50s infinite linear;
+}
+
+#🌹 .💐{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-242px 0 0 -200px;
+	opacity:		0;
+}
+#🌹 .💐.go{
+	animation:		zoom 0.5s ease-in;
+}
+
+#🌹 .🌺{
+	position:		fixed;
+	bottom:			0%;
+	left:			50%;
+	margin:			0 0 0 -470px;
+	display:		none;
+}
+
+
+@keyframes rotateRight{
+0% {transform:rotate(0deg);}
+100% {transform:rotate(360deg);}
+}
+
+@keyframes rotateLeft{
+0% {transform:rotate(360deg);}
+100% {transform:rotate(0deg);}
+}
+
+@keyframes zoom{
+0% {opacity:0;transform:scale(0.5,0.5);}
+70% {opacity:1;transform:scale(1,1);}
+80% {opacity:1;transform:scale(1.1,1.1);}
+90% {opacity:1;transform:scale(0.9,0.9);}
+100% {opacity:1;transform:scale(1,1);}
+}
+
+
+
+#🌹 .🌟{
+}
+
+#🌹 .🌟 li{
+	list-style:		none;
+	position:		fixed;
+	background:		url(../img/🌟.png) no-repeat center center;
+	background-size:	contain;
+	opacity:		0;
+}
+
+#🌹 .🌟 li.g1{
+	animation:		starLeft 3s infinite linear;
+}
+
+#🌹 .🌟 li.g2{
+	animation:		starRight 3s infinite linear;
+}
+
+@keyframes starLeft{
+0%{opacity:0;transform:scale(1,1) rotate(30deg);}
+20%{opacity:1;transform:scale(1.2,1.2) rotate(210deg);}
+50%{opacity:0;transform:scale(1,1) rotate(390deg);}
+100%{opacity:0;transform:scale(1,1) rotate(390deg);}
+}
+
+@keyframes starRight{
+0%{opacity:0;transform:scale(1,1) rotate(-30deg);}
+50%{opacity:0;transform:scale(1,1) rotate(-30deg);}
+75%{opacity:1;transform:scale(1.2,1.2) rotate(-210deg);}
+100%{opacity:0;transform:scale(1,1) rotate(-390deg);}
+}
+
+
+#🌹 .🌟 .k1{
+	top:			30%;
+	left:			35%;
+	width:			30px;
+	height:			30px;
+	transform:		rotate(30deg);
+}
+
+#🌹 .🌟 .k2{
+	top:			60%;
+	left:			55%;
+	width:			50px;
+	height:			50px;
+	transform:		rotate(-30deg);
+}
+
+#🌹 .🌟 .k3{
+	top:			40%;
+	left:			65%;
+	width:			20px;
+	height:			20px;
+	transform:		rotate(15deg);
+}
+
+#🌹 .🌟 .k4{
+	top:			20%;
+	left:			50%;
+	width:			30px;
+	height:			30px;
+	transform:		rotate(-15deg);
+}
+
+#🌹 .🌟 .k5{
+	top:			60%;
+	left:			20%;
+	width:			15px;
+	height:			15px;
+	transform:		rotate(-15deg);
+}
+
+#🌹 .🌟 .k6{
+	top:			20%;
+	left:			10%;
+	width:			20px;
+	height:			20px;
+	transform:		rotate(-55deg);
+}
+
+#🌹 .🌟 .k7{
+	top:			50%;
+	left:			80%;
+	width:			30px;
+	height:			30px;
+	transform:		rotate(-55deg);
+}
+
+
+
+h1{
+	//box-sizing:		border-box;
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-105px 0 0 -170px;
+	padding:		20px;
+	background:		rgba(255,255,255,0.7);
+	border:			2px solid #fff;
+	border-radius:		5px;
+	font-size:		20px;
+	font-size:		2rem;
+	font-weight:		normal;
+	color:			#333;
+	text-shadow:		1px 1px 1px #fff;
+}
+
+h1 span{
+	display:		block;
+	width:			15em;
+	white-space:		nowrap;
+	overflow:		hidden;
+	border-right:		0.1px solid black;
+	opacity:		0;
+}
+
+h1 span.go{
+	opacity:		1;
+	animation:		typing 5s steps(15, end), /* # of steps = # of characters */
+				blink-caret 1s step-end infinite;
+}
+
+h1 i{
+	display:inline-block;
+	width:0; 
+	height:0; 
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-top:10px solid #333;
+	animation:		flash 1s infinite ease-in-out;
+}
+
+
+@keyframes typing {
+from { width: 0 }
+to { width:15em; }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: black }
+}
+
+
+@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}
+
+
+
+.nuclear {
+	display:		none;
+	position:		absolute;
+	left:			20px;
+	bottom:			20px;
+	background-image: url("../img/nuclear.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation:3s ease-out infinite pulse;
+}
+
+.music-icon {
+	display:		block;
+	position:		absolute;
+	right:			20px;
+	bottom:			20px;
+	background-image: url("../img/music_icon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+}
+
+.play{
+	animation:15s linear 0s normal none infinite rotate;
+}
+
+@keyframes rotate{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
+@keyframes pulse{
+	0%{opacity:0.2;}
+	50%{opacity:0.8;}
+	to{opacity:0.2;}
+}
+
+
+
+#form{
+	display:		none;
+	width:			280px;
+	background:		#fff;
+	padding:		70px 50px;
+	text-align:		center;
+}
+
+#form h2{
+	color:			#cc0000;
+	text-shadow:		1px 1px 1px #fff;
+}
+
+#form h3{
+	margin-bottom:		10px;
+	font-size:		14px;
+	font-size:		1.4rem;
+}
+
+#form p{
+	margin-bottom:		10px;
+	color:			#fff;
+}
+
+#form input{
+	box-sizing:		border-box;
+	border:			1px solid #b8b8b8;
+	border-right:		0;
+	border-radius:		0;
+	box-shadow:		none;
+	padding:		0 10px;
+	width:			200px;
+	height:			35px;
+	font-size:		14px;
+	font-size:		1.4rem;
+	color:			#666;
+}
+
+#form input:focus{
+	border:			1px solid #2d78f4;
+	border-right:		0;
+	color:			#333;
+}
+
+#form button{
+	box-sizing:		border-box;
+	border:			1px solid #2d78f4;
+	border-top-width:	2px;
+	background:		#2d78f4;
+	width:			80px;
+	height:			35px;
+	font-size:		15px;
+	font-size:		1.5rem;
+	color:			#fff;
+	cursor:			pointer;
+}
+
+
+h4{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-32px 0 0 -79px;
+	font-size:		40px;
+	font-size:		4rem;
+	color:			#fff;
+	text-shadow:		none;
+	opacity:		0;
+}
+
+h4.go{
+	animation:		bye 12s ease-out;
+}
+
+@keyframes bye{
+	0%{opacity:0;color:#fff;transform:scale(20,20);}
+	50%{opacity:1;}
+	100%{opacity:0;color:#000;transform:scale(0.1,0.1);}
+}
+
+
+#qLoverlay{
+	display:		none;
+}
+
+#loading{
+	position:		fixed;
+	z-index:		9999;
+	background:		url(../img/bg.jpg) no-repeat center center;
+	background-size:	cover;
+	width:			100%;
+	height:			100%;
+}
+
+#loading img{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-53px 0 0 -110px;
+}
+
+
+
+
