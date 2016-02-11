@@ -118,9 +118,9 @@ $(document).ready(function(){
 			$('h1').css('display', 'none');
 			parent.$.fancybox.close();
 			$('h4').addClass('go');
-			$('#stop-btn').click();
 			$('.nuclear').fadeOut(3000);
-			$('.music-icon').fadeOut(3000);
+			//$('#stop-btn').click();
+			//$('.music-icon').fadeOut(3000);
 			//$('.🌟').fadeOut(3000);
 			$('.💐').fadeOut(3000);
 			setTimeout(function(){
