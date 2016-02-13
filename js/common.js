@@ -29,9 +29,9 @@ $(document).ready(function(){
 	$("#🌹").height(windH);
 	
 	
-	setTimeout(function(){
-		$('#loading').fadeOut(2000);
-	}, 3000);
+	//setTimeout(function(){
+	//	$('#loading').fadeOut(2000);
+	//}, 3000);
 	
 	setTimeout(function(){
 		$('.t1').addClass("go");
